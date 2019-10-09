@@ -4,9 +4,11 @@ document.onmousemove = coffeeLove;
       var colors = ['#ccc','#6cf','#eba13a']; 
       function coffeeLove (event) {
 
-        //So this part dynamically creates the circle  
+        //So this part dynamically creates a division  
         var circle = document.createElement("div"); 
+        //giving the class name for newly created division
         circle.setAttribute("class", "circle"); 
+        //append the created division as a child for parent node body
         document.body.appendChild(circle); 
 
         // Assigns the position to where cursor goes if this is not assigned the object will not move with cursor
